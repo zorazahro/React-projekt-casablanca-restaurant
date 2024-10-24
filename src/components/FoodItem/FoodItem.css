@@ -1,85 +1,94 @@
 .food-item {
+    color: #2c3e50;
     width: 100%;
     margin: auto;
     border-radius: 15px;
-    box-shadow: 0px 0px 10px #49557e;
-    transition: 0.3s;
-    animation: fadeIn 1s;
-
-    background-color: #fff;
-    /* Couleur de fond pour les items */
-
-    overflow: hidden;
-    /* Masquer le débordement */
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
-    /* Ombre pour les items */
-    transition: transform 0.3s;
-    /* Transition pour effet de survol */
+    transition: 0.3s;
+    background-color: #fff;
+    overflow: hidden;
     display: flex;
-    /* Affichage flexible pour le contenu */
     flex-direction: column;
-    /* Disposition en colonne */
-    height: 350px;
-    /* Hauteur fixe pour les items */
+    height: 550px;
 
 }
 
 .food-item-image {
     width: 100%;
-    border-radius: 15px 15px 0px 0px;
+    border-radius: 15px 15px 0 0;
+    height: 100%; /* Modifié pour s'adapter */
+    object-fit: cover;
 }
 
 .food-item-img-container {
-    height: 200px;
-    /* Hauteur fixe pour les images */
-    overflow: hidden;
-    /* Masquer le débordement */
+    height: 200px; 
+    position: relative; /* Ajouté pour le positionnement */
 }
 
-.food-item-image {
-    width: 100%;
-    /* Prendre toute la largeur */
-    height: 100%;
-    /* Ajuster la hauteur pour remplir le conteneur */
-    object-fit: cover;
-    /* Couvrir le conteneur sans déformer l'image */
+.food-item-img-container .add {
+    cursor: pointer;
+    position: absolute; /* Positionnement absolu */
+    bottom: 10px; /* Position par rapport au bas */
+    right: 10px; /* Position par rapport à la droite */
+    z-index: 1000; /* Assure qu'elle soit au-dessus */
+    height: 40px;
+    width: 40px;
 }
 
-.food-item-info {
-    padding: 20px;
-    /* Espacement interne pour les infos */
-    flex-grow: 1;
-    /* Permet à cette section de prendre tout l'espace restant */
+.food-item-counter {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
     display: flex;
-    /* Affichage flexible pour le contenu */
-    flex-direction: column;
-    /* Disposition en colonne */
+    align-items: center;
+    justify-content: center;
+    z-index: 2; /* Assure-toi qu'il soit au-dessus de l'icône */
+    gap: 10px;
+    background-color:#fff;
+    border-radius: 50px;
+    padding: 2px 4px 2px 7px;
 }
+
+
+
+.food-item-counter img {
+    cursor: pointer; 
+    margin: 0 5px;
+    
+}
+
 
 .food-item-name-rating {
     display: flex;
-    /* Afficher le nom et la notation en ligne */
     justify-content: space-between;
-    /* Espacement entre les éléments */
     align-items: center;
-    /* Centrer verticalement */
     margin-bottom: 10px;
-}
-
-.food-item-name-rating p {
     font-weight: bold;
-    font-size: 20px ;
+    font-size: 20px;
 }
 
 .food-item-desc {
     font-size: 18px;
     margin: 10px 0;
     color: #2c3e50;
-    
+}
+
+.food-item-info {
+    margin-top: 50px;
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Assure-toi que le contenu se pousse vers le bas */
 }
 
 .food-item-price {
-    font-size: 18px;
-    color: #2c3e50;
-   
+    font-weight: bold;
+    font-size: 1.4rem;
+    color:  #fbb643;
+    margin-top: auto; /* Pousse l'élément en bas */
+}
+.add-icon-orange{
+    width: 30px; /* Ajuste la largeur souhaitée */
+    height: 30px; /* Ajuste la hauteur souhaitée, si nécessaire */
 }

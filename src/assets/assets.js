@@ -2,6 +2,9 @@
 
 // Import des images
 import basket_icon from './basket_icon.png';
+import add_icon_white from './add_icon_white.jpg';
+import add_icon_orange from './add_icon_orange.png'
+import remove_icon_grey from './remove_icon_grey.png'
 import logo from './logo.png';
 import header_img from './header_img.png';
 import search_icon from './search_icon.png';
@@ -93,6 +96,9 @@ export const assets = {
   logo,
   header_img,
   search_icon,
+  add_icon_white,
+  add_icon_orange,
+  remove_icon_grey
   
 };
 export const menu_list=[
