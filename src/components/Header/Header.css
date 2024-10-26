@@ -4,7 +4,7 @@
    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(128, 127, 124, 0.5)), url('/src/assets/header_img2.jpg') no-repeat center center;
     background-size: cover;
     position: relative;
-   
+    overflow: hidden;
     font-size: 1.5rem;
 }
 
@@ -17,10 +17,11 @@
     align-items: start;
     gap: 1.5vw ;
     max-width: 50%;
+   
     bottom: 10% ;
     left: 6vw;
     animation: fadeIn 3s;
-
+  
     z-index: 2; /* Assure que le texte soit au-dessus de l'overlay */
 }
 .header-content button{
@@ -34,6 +35,7 @@
     transition: 0.3s;
     font-weight: 500;
     font-size: max(1vw,13px);
+   
 
 }
 .header-content button:hover{
@@ -47,7 +49,29 @@
    
 }
 .header-content p{
+    text-align: justify;
     color: whitesmoke;
-    font-size: 1.2vw;
+    font-size: max(1.4vw, 16px);
+
+}
+@media(max-width:1050px){
+   
+    .header-content{
+        max-width: 45%;
+    }
+
+}
+@media(max-width:750px){
+   
+    .header-content{
+        max-width: 65%;
+    }
+    .header-content p{
+        display: none;
+    }
+    .header-content button{
+     padding: 2vw 4vw;
+    }
+
 
 }

@@ -8,6 +8,13 @@ import remove_icon_grey from './remove_icon_grey.png'
 import logo from './logo.png';
 import header_img from './header_img.png';
 import search_icon from './search_icon.png';
+import facebook_icon from './facebook_icon.png';
+import twitter_icon from './twitter_icon.png';
+import linkedin_icon from './linkedin_icon.png';
+import instagram_icon from './instagram_icon.png';
+import play_store from './play_store.jpg';
+import cross_icon from './cross_icon.png'
+import app_store from './app_store.webp';
 import menu_1 from './entree1.png';
 import menu_2 from './soupe2.png';
 import menu_3 from './tajine4.jpg';
@@ -98,8 +105,14 @@ export const assets = {
   search_icon,
   add_icon_white,
   add_icon_orange,
-  remove_icon_grey
-  
+  remove_icon_grey,
+  facebook_icon,
+  twitter_icon,
+  linkedin_icon,
+  instagram_icon,
+  app_store,
+  play_store,
+  cross_icon,
 };
 export const menu_list=[
   {
@@ -127,7 +140,7 @@ export const menu_list=[
     menu_image: menu_6
   },
   {
-    menu_name: 'Nachtisch',
+    menu_name: 'Dessert',
     menu_image: menu_7
   },
   {
@@ -135,7 +148,7 @@ export const menu_list=[
     menu_image: menu_8
   },
   {
-    menu_name: 'Getränk',
+    menu_name: 'Boisson',
     menu_image: menu_9
   }
 ]
@@ -158,7 +171,7 @@ export const drink_list = [
     category: 'Boisson'
   },
   {
-    _id: 7,
+    _id: 3,
     name: 'Zitronen-Minze-Limonade',
     image: boisson2_image, // Assure-toi d'importer l'image correspondante si c'est différent
     price: 4.49,
@@ -191,9 +204,11 @@ export const drink_list = [
     category: 'Boisson'
   }
 ];
+
+
   export const tajine_list = [
     {
-      _id: 1,
+      _id: 7,
       name: 'Tajine mit Lamm',
       image: tajine1_image,
       price: 16.99,
@@ -201,7 +216,7 @@ export const drink_list = [
       category: 'Tajine'
     },
     {
-      _id: 2,
+      _id: 8,
       name: 'Huhn-Tajine mit Oliven und Zitrone',
       image: tajine2_image,
       price: 14.99,
@@ -209,7 +224,7 @@ export const drink_list = [
       category: 'Tajine'
     },
     {
-      _id: 3,
+      _id: 9,
       name: 'Vegetarische Tajine',
       image: tajine3_image,
       price: 12.99,
@@ -217,7 +232,7 @@ export const drink_list = [
       category: 'Tajine'
     },
     {
-      _id: 4,
+      _id: 10,
       name: 'Meeresfrüchte-Tajine',
       image: tajine4_image,
       price: 19.99,
@@ -225,7 +240,7 @@ export const drink_list = [
       category: 'Tajine'
     },
     {
-      _id: 5,
+      _id: 11,
       name: 'Rind-Tajine mit Pflaumen',
       image: tajine5_image,
       price: 17.99,
@@ -233,7 +248,7 @@ export const drink_list = [
       category: 'Tajine'
     },
     {
-      _id: 6,
+      _id: 12,
       name: 'Lamm-Tajine mit Aprikosen',
       image: tajine6_image,
       price: 18.99,
@@ -241,7 +256,7 @@ export const drink_list = [
       category: 'Tajine'
     },
     {
-      _id: 7,
+      _id: 13,
       name: 'Huhn-Tajine mit Mandeln',
       image: tajine7_image,
       price: 15.99,
@@ -249,7 +264,7 @@ export const drink_list = [
       category: 'Tajine'
     },
     {
-      _id: 8,
+      _id: 14,
       name: 'Gemischte Fleisch-Tajine',
       image: tajine8_image,
       price: 20.99,
@@ -257,7 +272,7 @@ export const drink_list = [
       category: 'Tajine'
     },
     {
-      _id: 9,
+      _id: 15,
       name: 'Tajine mit Rind und Gemüse',
       image: tajine9_image,
       price: 16.99,
@@ -265,7 +280,7 @@ export const drink_list = [
       category: 'Tajine'
     },
     {
-      _id: 10,
+      _id: 16,
       name: 'Tajine mit Rind und Kartoffeln',
       image: tajine10_image,
       price: 17.49,
@@ -273,7 +288,7 @@ export const drink_list = [
       category: 'Tajine'
     },
     {
-      _id: 11,
+      _id: 17,
       name: 'Lamm-Tajine mit Kichererbsen',
       image: tajine11_image,
       price: 18.49,
@@ -281,9 +296,10 @@ export const drink_list = [
       category: 'Tajine'
     }
   ];
+
   export const dessert_list = [
     {
-      _id: 1,
+      _id: 18,
       name: 'Kaab Laghzal (Pied de Ghazel)',
       image: dessert1_image,
       price: 2.99,
@@ -291,7 +307,7 @@ export const drink_list = [
       category: 'Dessert'
     },
     {
-      _id: 2,
+      _id: 19,
       name: 'Mhancha (Escargot d\'Amande)',
       image: dessert2_image,
       price: 3.49,
@@ -299,7 +315,7 @@ export const drink_list = [
       category: 'Dessert'
     },
     {
-      _id: 3,
+      _id: 20,
       name: 'Makrout (Gâteau au Datté)',
       image: dessert3_image,
       price: 3.99,
@@ -307,7 +323,7 @@ export const drink_list = [
       category: 'Dessert'
     },
     {
-      _id: 4,
+      _id: 21,
       name: 'Jouhara (Mille Feuille Marocaine)',
       image: dessert4_image,
       price: 4.49,
@@ -315,7 +331,7 @@ export const drink_list = [
       category: 'Dessert'
     },
     {
-      _id: 5,
+      _id: 22,
       name: 'Briwat au Amande (Triangle au Amande)',
       image: dessert5_image,
       price: 2.99,
@@ -323,7 +339,7 @@ export const drink_list = [
       category: 'Dessert'
     },
     {
-      _id: 6,
+      _id: 23,
       name: 'Baghrir au Miel (Crêpe Marocaine au Miel)',
       image: dessert6_image,
       price: 3.49,
@@ -331,7 +347,7 @@ export const drink_list = [
       category: 'Dessert'
     },
     {
-      _id: 7,
+      _id: 24,
       name: 'Kaab Laghzal au Figue et Pistache',
       image: dessert7_image,
       price: 3.99,
@@ -339,7 +355,7 @@ export const drink_list = [
       category: 'Dessert'
     },
     {
-      _id: 8,
+      _id: 25,
       name: 'Kaab Laghzal au Pistache',
       image: dessert8_image,
       price: 3.99,
@@ -347,7 +363,7 @@ export const drink_list = [
       category: 'Dessert'
     },
     {
-      _id: 9,
+      _id: 26,
       name: 'Ghriba au Amande et Orange (Gâteau au Amande et Orange)',
       image: dessert9_image,
       price: 2.99,
@@ -355,7 +371,7 @@ export const drink_list = [
       category: 'Dessert'
     },
     {
-      _id: 10,
+      _id: 27,
       name: 'Chabakia (Gâteau au Sésame au Miel)',
       image: dessert10_image,
       price: 3.49,
@@ -363,7 +379,7 @@ export const drink_list = [
       category: 'Dessert'
     },
     {
-      _id: 11,
+      _id: 28,
       name: 'Flanc au Rose et Amande',
       image: dessert11_image,
       price: 4.49,
@@ -371,7 +387,7 @@ export const drink_list = [
       category: 'Dessert'
     },
     {
-      _id: 12,
+      _id: 29,
       name: 'Bahla au Noix de Pican (Gâteau au Noix de Pican)',
       image: dessert12_image,
       price: 4.99,
@@ -382,7 +398,7 @@ export const drink_list = [
 
   export const entree_list = [
     {
-      _id: 1,
+      _id: 30,
       name: 'Aubergine und Tahina',
       image: entree1_image,
       price: 3.99,
@@ -390,7 +406,7 @@ export const drink_list = [
       category: 'Vorspeise'
     },
     {
-      _id: 2,
+      _id: 31,
       name: 'Zaalouk (Auberginen-Caviar, gegrillte Paprika)',
       image: entree2_image,
       price: 4.49,
@@ -398,7 +414,7 @@ export const drink_list = [
       category: 'Vorspeise'
     },
     {
-      _id: 3,
+      _id: 32,
       name: 'Taktouka (Tomate, gegrillte Paprika und Zwiebel)',
       image: entree3_image,
       price: 3.99,
@@ -406,7 +422,7 @@ export const drink_list = [
       category: 'Vorspeise'
     },
     {
-      _id: 5,
+      _id: 33,
       name: 'Gegrilltes Gemüse (Kürbis, Feige, Granatapfel, Mandeln, Zwiebel, Paprika, Olive)',
       image: entree5_image,
       price: 4.99,
@@ -414,7 +430,7 @@ export const drink_list = [
       category: 'Vorspeise'
     },
     {
-      _id: 6,
+      _id: 34,
       name: 'Karotten-Linsen-Salat mit Pistazien und Zwiebel',
       image: entree6_image,
       price: 3.49,
@@ -422,7 +438,7 @@ export const drink_list = [
       category: 'Vorspeise'
     },
     {
-      _id: 7,
+      _id: 35,
       name: 'Hummus mit Bohnen',
       image: entree7_image,
       price: 4.49,
@@ -430,7 +446,7 @@ export const drink_list = [
       category: 'Vorspeise'
     },
     {
-      _id: 8,
+      _id: 36,
       name: 'Gegrillte Paprika in drei Farben',
       image: entree8_image,
       price: 3.99,
@@ -438,7 +454,7 @@ export const drink_list = [
       category: 'Vorspeise'
     },
     {
-      _id: 9,
+      _id: 37,
       name: 'Rote Beete mit Ziegenkäse und Arganöl',
       image: entree9_image,
       price: 4.49,
@@ -446,7 +462,7 @@ export const drink_list = [
       category: 'Vorspeise'
     },
     {
-      _id: 10,
+      _id: 38,
       name: 'Salat mit Orange, Granatapfel und Pistazien mit Orangenblütenwasser',
       image: entree10_image,
       price: 3.99,
@@ -454,7 +470,7 @@ export const drink_list = [
       category: 'Vorspeise'
     },
     {
-      _id: 11,
+      _id: 39,
       name: 'Oktopus mit Tomaten und Oliven',
       image: entree11_image,
       price: 5.49,
@@ -462,7 +478,7 @@ export const drink_list = [
       category: 'Vorspeise'
     },
     {
-      _id: 12,
+      _id: 40,
       name: 'Feigen mit Ziegenkäse, Walnüssen und Honig',
       image: entree12_image,
       price: 4.99,
@@ -470,7 +486,7 @@ export const drink_list = [
       category: 'Vorspeise'
     },
     {
-      _id: 13,
+      _id: 41,
       name: 'Kichererbsensalat mit Tomaten, Gurken, Zwiebeln, Sesam, Pfeffer, Petersilie und Minze',
       image: entree13_image,
       price: 3.49,
@@ -478,7 +494,7 @@ export const drink_list = [
       category: 'Vorspeise'
     },
     {
-      _id: 14,
+      _id: 42,
       name: 'Bohnen mit Thunfisch, schwarzen Oliven, Petersilie und Zwiebeln',
       image: entree14_image,
       price: 4.49,
@@ -486,7 +502,7 @@ export const drink_list = [
       category: 'Vorspeise'
     },
     {
-      _id: 15,
+      _id: 43,
       name: 'Verschiedene marinierte Meeresfrüchte',
       image: entree15_image,
       price: 6.49,
@@ -494,7 +510,7 @@ export const drink_list = [
       category: 'Vorspeise'
     },
     {
-      _id: 16,
+      _id: 44,
       name: 'Karottensalat mit Petersilie und Kreuzkümmel',
       image: entree16_image,
       price: 3.99,
@@ -506,7 +522,7 @@ export const drink_list = [
 
   export const couscous_list = [
     {
-      _id: 1,
+      _id: 45,
       name: 'Couscous Royal',
       image: couscous1_image,
       price: 12.99,
@@ -514,7 +530,7 @@ export const drink_list = [
       category: 'Couscous'
     },
     {
-      _id: 2,
+      _id: 46,
       name: 'Couscous mit Lamm',
       image: couscous5_image, // Image from previous couscous2
       price: 11.99,
@@ -522,7 +538,7 @@ export const drink_list = [
       category: 'Couscous'
     },
     {
-      _id: 3,
+      _id: 47,
       name: 'Couscous mit Kaninchen',
       image: couscous3_image,
       price: 11.99,
@@ -530,7 +546,7 @@ export const drink_list = [
       category: 'Couscous'
     },
     {
-      _id: 4,
+      _id: 48,
       name: 'Couscous mit Fisch',
       image: couscous4_image,
       price: 12.49,
@@ -538,7 +554,7 @@ export const drink_list = [
       category: 'Couscous'
     },
     {
-      _id: 5,
+      _id: 49,
       name: 'Couscous mit Huhn',
       image: couscous2_image, // Image from previous couscous5
       price: 10.49,
@@ -546,7 +562,7 @@ export const drink_list = [
       category: 'Couscous'
     },
     {
-      _id: 6,
+      _id: 50,
       name: 'Couscous mit 7 Gemüsen',
       image: couscous6_image,
       price: 10.99,
@@ -557,7 +573,7 @@ export const drink_list = [
 
   export const pastilla_list = [
     {
-      _id: 1,
+      _id: 51,
       name: 'Pastilla mit Huhn und Mandeln',
       image: pastilla1_image,
       price: 12.99,
@@ -565,7 +581,7 @@ export const drink_list = [
       category: 'Pastilla'
     },
     {
-      _id: 2,
+      _id: 52,
       name: 'Pastilla mit Lamm, Pflaumen und Walnüssen',
       image: pastilla2_image,
       price: 13.49,
@@ -573,7 +589,7 @@ export const drink_list = [
       category: 'Pastilla'
     },
     {
-      _id: 3,
+      _id: 53,
       name: 'Pastilla mit Fisch und Meeresfrüchten',
       image: pastilla3_image,
       price: 14.99,
@@ -581,7 +597,7 @@ export const drink_list = [
       category: 'Pastilla'
     },
     {
-      _id: 5,
+      _id: 54,
       name: 'Pastilla mit Spinat, Ziegenkäse, Feigen und Walnüssen',
       image: pastilla5_image,
       price: 12.49,
@@ -592,7 +608,7 @@ export const drink_list = [
 
   export const bread_list = [
     {
-      _id: 1,
+      _id: 55,
       name: 'Brot mit Arganöl, in der Pfanne gebacken',
       image: pain1_image,
       price: 3.49,
@@ -600,7 +616,7 @@ export const drink_list = [
       category: 'Brot'
     },
     {
-      _id: 2,
+      _id: 56,
       name: 'Brot mit schwarzen Oliven',
       image: pain2_image,
       price: 3.99,
@@ -608,7 +624,7 @@ export const drink_list = [
       category: 'Brot'
     },
     {
-      _id: 3,
+      _id: 57,
       name: 'Brot mit Sesam und Fenchel',
       image: pain3_image,
       price: 3.49,
@@ -616,7 +632,7 @@ export const drink_list = [
       category: 'Brot'
     },
     {
-      _id: 4,
+      _id: 58,
       name: 'Maisbrot',
       image: pain4_image,
       price: 3.99,
@@ -624,7 +640,7 @@ export const drink_list = [
       category: 'Brot'
     },
     {
-      _id: 5,
+      _id: 59,
       name: 'Msemen – Blätterteigbrot',
       image: pain5_image,
       price: 2.99,
@@ -636,7 +652,7 @@ export const drink_list = [
 
 export const soup_list = [
   {
-    _id: 1,
+    _id: 60,
     name: 'Bohnensuppe',
     image: soupe1_image,
     price: 5.49,
@@ -644,7 +660,7 @@ export const soup_list = [
     category: 'Suppe'
   },
   {
-    _id: 2,
+    _id: 61,
     name: 'Harira',
     image: soupe2_image,
     price: 5.99,
@@ -655,7 +671,7 @@ export const soup_list = [
 
 export const grill_list = [
   {
-    _id: 1,
+    _id: 62,
     name: 'Gegrilltes Hackfleisch',
     image: grille1_image,
     price: 8.99,
@@ -663,7 +679,7 @@ export const grill_list = [
     category: 'Grill'
   },
   {
-    _id: 2,
+    _id: 63,
     name: 'Gegrillte Leber',
     image: grille2_image,
     price: 9.49,
